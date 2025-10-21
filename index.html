@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student Portal — Home</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <h1 class="brand">UniPortal</h1>
+      <nav class="nav">
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="grades.html">Grades</a>
+        <a href="courses.html">Courses</a>
+      </nav>
+      <div class="header-actions">
+        <button id="dark-toggle" class="icon-btn" title="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2 class="fade-in">Welcome back, Student!</h2>
+      <p>This is an interactive sample student portal. Use the links above to explore the dashboard, profile, grades and courses pages.</p>
+      <div class="quick-cards">
+        <div class="card anim-card">
+          <h3>Next class</h3>
+          <p>Web Development — Oct 23, 2025 · 10:00 AM</p>
+        </div>
+        <div class="card anim-card">
+          <h3>Holds</h3>
+          <p>No holds on your account</p>
+        </div>
+        <div class="card anim-card">
+          <h3>Credits</h3>
+          <p>18</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="widgets">
+      <div class="widget anim-card">
+        <h4>Announcements</h4>
+        <ul>
+          <li>Project proposals due Nov 1, 2025</li>
+          <li>Holiday: Nov 30, 2025</li>
+        </ul>
+      </div>
+      <div class="widget anim-card">
+        <h4>To-dos</h4>
+        <div id="todo-app">
+          <form id="todo-form" class="todo-form" onsubmit="return false;">
+            <input id="todo-input" placeholder="Add a task..." />
+            <button id="todo-add" class="btn">Add</button>
+          </form>
+          <ul id="todo-list" class="todo-list"></ul>
+        </div>
+      </div>
+      <div class="widget anim-card">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Academic Calendar</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 UniPortal — Sample Student Portal</div>
+  </footer>
+</body>
+</html>

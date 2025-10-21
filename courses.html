@@ -1,0 +1,65 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student Portal — Courses</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <h1 class="brand">UniPortal</h1>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="grades.html">Grades</a>
+        <a href="courses.html" class="active">Courses</a>
+      </nav>
+      <div class="header-actions">
+        <button id="dark-toggle-4" class="icon-btn" title="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container courses-page">
+    <h2>My Courses — Fall 2025</h2>
+    <div class="course-list">
+      <article class="course anim-card" data-course='{"title":"Web Development","instructor":"Prof. Reyes","credits":3,"schedule":"Tue/Thu 10:00 - 11:30","desc":"Build modern web apps using HTML, CSS and JS."}'>
+        <h3>Web Development</h3>
+        <p>Instructor: Prof. Reyes · Credits: 3</p>
+        <p>Schedule: Tue/Thu 10:00 - 11:30</p>
+        <a class="btn course-details" href="#" data-course-id="web">Details</a>
+      </article>
+      <article class="course anim-card" data-course='{"title":"Data Structures","instructor":"Dr. Santos","credits":4,"schedule":"Mon/Wed 13:00 - 15:00","desc":"Algorithms and data structures with practical exercises."}'>
+        <h3>Data Structures</h3>
+        <p>Instructor: Dr. Santos · Credits: 4</p>
+        <p>Schedule: Mon/Wed 13:00 - 15:00</p>
+        <a class="btn course-details" href="#" data-course-id="ds">Details</a>
+      </article>
+      <article class="course anim-card" data-course='{"title":"Networking","instructor":"Engr. Cruz","credits":3,"schedule":"Fri 09:00 - 12:00","desc":"Fundamentals of computer networks, LAN/WAN and routing."}'>
+        <h3>Networking</h3>
+        <p>Instructor: Engr. Cruz · Credits: 3</p>
+        <p>Schedule: Fri 09:00 - 12:00</p>
+        <a class="btn course-details" href="#" data-course-id="net">Details</a>
+      </article>
+    </div>
+  </main>
+
+  <div id="course-modal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button id="modal-close" class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-instructor"></p>
+      <p id="modal-schedule"></p>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 UniPortal — Sample Student Portal</div>
+  </footer>
+</body>
+</html>

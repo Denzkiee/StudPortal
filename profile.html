@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Student Portal — Profile</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <h1 class="brand">UniPortal</h1>
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="grades.html">Grades</a>
+        <a href="courses.html">Courses</a>
+      </nav>
+      <div class="header-actions">
+        <button id="dark-toggle-2" class="icon-btn" title="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container profile-page">
+    <aside class="profile-sidebar anim-card">
+      <div class="avatar">JD</div>
+      <h2 id="profile-name">John D.</h2>
+      <p>BS Computer Science · Year 3</p>
+      <p><strong>Email:</strong> john.d@example.edu</p>
+      <p><strong>Student ID:</strong> 202500123</p>
+      <button id="edit-profile-btn" class="btn">Edit Profile</button>
+    </aside>
+
+    <section class="profile-main anim-card">
+      <h2>About</h2>
+      <p id="about-text">Student interested in web development and networking. This is placeholder text for a sample profile.</p>
+
+      <h3>Contact</h3>
+      <form id="profile-form" class="profile-form" onsubmit="return false;">
+        <label>Phone<input id="phone" type="text" value="+63 912 345 6789" readonly></label>
+        <label>Address<textarea id="address" readonly>123 Sample St., Manila</textarea></label>
+        <div class="form-actions">
+          <button id="save-profile" class="btn" style="display:none;">Save</button>
+          <button id="cancel-profile" class="btn" style="display:none;">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 UniPortal — Sample Student Portal</div>
+  </footer>
+</body>
+</html>
